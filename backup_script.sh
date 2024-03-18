@@ -35,6 +35,6 @@ echo " "
 if [ $? -eq 0 ]; then
 	  echo "Backup successful! Archive saved to: $backup_filepath"
   else
-	    echo "Backup failed. Check for errors."
+          echo "Backup failed. Check for errors."
 fi
 echo "Thanks "
