@@ -1,2 +1,2 @@
 # Backup_script
-Backup script automation script
+Backup automation script.
