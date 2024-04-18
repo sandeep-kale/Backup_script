@@ -1,6 +1,7 @@
 #!/bin/bash
-
-#####################################The is Backup_script.sh
+#Version-02
+#Author- Sandeep Kale
+##########The is Backup_script #########
 
 echo -e " \n ******** Hello! $(whoami) ********"
 echo " ================================ "
@@ -34,7 +35,10 @@ sudo tar -czvf "$backup_filepath" "$source_dir"
 echo " "
 if [ $? -eq 0 ]; then
 	  echo "Backup successful! Archive saved to: $backup_filepath"
+          echo "Backup completed at: 
+          $timestamp "| mailx -s "Backup Completed"
+	  $recipient
+
   else
           echo "Backup failed. Check for errors."
 fi
-echo "Thanks "
